@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!-- link CSS -->
+    <!-- link css -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>ToDoList</h1>
-    <form id="InputForm">
-        <input type="text" id="InputText" placeholder="Entrez votre tâche..." autocomplete="off">
-        <button type="submit" id="btn_submit">valider</button>
-    </form>
-    <div class="list_tache_container">
-        <h2>Vos Tâches:</h2>
-        <ul class="list_tache">
-        </ul> 
+    <div class="todolist">
+        <h1>Todolist <img src="icone/todolist.svg" alt=""> </h1>
+        <form id="InputForm">
+            <input type="text" id="InputText" placeholder="Add a task.." autocomplete="off">
+            <button type="submit">Add</button>
+        </form>
+        <ul class="list-tache">
+            <li>adrien</li>
+            <li>mina</li>
+            <li>enola</li>
+        </ul>
     </div>
 
-    <!-- link JS -->
     <script src="index.js"></script>
 </body>
 </html>

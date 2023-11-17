@@ -6,45 +6,77 @@
 }
 body{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     height: 100vh;
     width: 100%;
+    background: linear-gradient(135deg,blue 30%,purple 60%)
+}
+.todolist{
+    background-color: white;
+    width: 50%;
+    height: 60%;
+    border-radius: 40px;
+    padding: 20px;
 }
 h1{
-    margin-top: 20px;
-    font-size: 3em;
-    font-family: sans-serif;
+    font-size: 2.5em;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(212, 178, 29);
+    margin-bottom: 5px;
+}
+h1 img{
+    width: 30px;
+    position: relative;
+    top: 5px;
 }
 form{
-   margin: 30px; 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(241, 236, 236);
+    border-radius: 10px 40px 40px 10px;
 }
-form input[type="text"]{
-    padding: 5px 20px;
-    font-size: 24px;
-    font-family: sans-serif;
-    color: white;
-    border-radius: 6px;
+form input{
+    width: 90%;
+    font-size: 1.8em;
+    background: transparent;
     border: none;
-    background: rgb(72, 72, 226);
     outline: none;
-    cursor: auto;
-}
-form button{
-    padding: 5px 12px;
-    font-size: 20px;
-    margin-left: 10px;
-    font-family: sans-serif;
-    color: white;
-    border-radius: 6px;
-    border: none;
-    background: rgb(72, 72, 226);
-    outline: none;
-    cursor: auto;
-}
-.list_tache_container{
-    background: rgb(238, 238, 222);
-    width: 50%;
     text-align: center;
-    border-radius: 10px;
+    padding: 5px;
+    color: rgb(104, 81, 207);
+    cursor: auto;
+}
+form input::placeholder{
+    color: rgba(76, 54, 199, 0.425);
+}
+button{
+    position: relative;
+    font-size: 2em;
+    background: rgb(212, 178, 29);
+    color: aliceblue;
+    border: none;
+    border-radius: 40px;
+    padding: 15px 45px;
+    cursor: pointer;
+    overflow: hidden;
+}
+button::before{
+    content: "Add";
+    position: absolute;
+    left: -100%;
+    top: 0;
+    padding: 15px 45px;
+    border-radius: 0;
+    background: #3452b3;
+    opacity: 0;
+    transition: 0.7s ease-in-out;
+}
+button:hover::before{
+    left: 0;
+    opacity: 1;
+    border-radius: 40px;
+    
 }
