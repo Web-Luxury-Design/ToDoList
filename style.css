@@ -43,8 +43,8 @@ form button{
     cursor: auto;
 }
 .list_tache_container{
-    background: beige;
+    background: rgb(238, 238, 222);
     width: 50%;
     text-align: center;
-
+    border-radius: 10px;
 }
